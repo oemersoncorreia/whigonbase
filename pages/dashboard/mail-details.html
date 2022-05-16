@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codescandy.com/geeks-bootstrap-5/pages/dashboard/mail-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Mar 2022 15:41:43 GMT -->
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Geeks is a fully responsive and yet modern premium bootstrap template. Geek is feature-rich components and beautifully designed pages that help you create the best possible website and web application projects." />
+<meta name="keywords" content="Geeks UI, bootstrap, bootstrap 5, Course, Sass, landing, Marketing, admin themes, bootstrap admin, bootstrap dashboard, ui kit, web app, multipurpose" />
+
+
+
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="https://codescandy.com/geeks-bootstrap-5/assets/images/favicon/favicon.ico">
+
+
+<!-- Libs CSS -->
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/fonts/feather/feather.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/dragula/dist/dragula.min.css" rel="stylesheet" />
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/tippy.js/dist/tippy.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link href="https://codescandy.com/geeks-bootstrap-5/assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="https://codescandy.com/geeks-bootstrap-5/assets/css/theme.min.css">
+    <title>Mail Details | Geeks - Bootstrap 5 Admin Dashboard Template</title>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+        <!-- navbar vertical -->
+         <!-- Sidebar -->
+ <nav class="navbar-vertical navbar">
+    <div class="nav-scroller">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="https://codescandy.com/geeks-bootstrap-5/index.html">
+            <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/brand/logo/logo-inverse.svg" alt="" />
+        </a>
+        <!-- Navbar nav -->
+        <ul class="navbar-nav flex-column" id="sideNavbar">
+            <li class="nav-item">
+                <a class="nav-link   collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navDashboard" aria-expanded="false" aria-controls="navDashboard">
+                    <i class="nav-icon fe fe-home me-2"></i> Dashboard
+                </a>
+                <div id="navDashboard" class="collapse " data-bs-parent="#sideNavbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-dashboard.html">
+                                    Overview
+                                </a>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item ">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/dashboard-analytics.html">
+                                    Analytics
+
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false" aria-controls="navCourses">
+                    <i class="nav-icon fe fe-book me-2"></i> Courses
+                </a>
+                <div id="navCourses"  class="collapse "  data-bs-parent="#sideNavbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-course-overview.html">
+                                    All Courses
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-course-category.html">
+                                    Courses Category
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-course-category-single.html">
+                                    Category Single
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+             <!-- Nav item -->
+             <li class="nav-item">
+                <a class="nav-link   collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navProfile" aria-expanded="false" aria-controls="navProfile">
+                    <i class="nav-icon fe fe-user me-2"></i> User
+                </a>
+                <div id="navProfile" class="collapse " data-bs-parent="#sideNavbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-instructor.html">
+                                    Instructor
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-students.html">Students</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Nav item -->
+                <li class="nav-item ">
+                    <a
+                        class="nav-link   collapsed  "
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navCMS"
+                        aria-expanded="false"
+                        aria-controls="navCMS"
+                    >
+                        <i class="nav-icon fe fe-book-open me-2"></i> CMS
+                    </a>
+                            <div id="navCMS" class="collapse  " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link   " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-cms-overview.html">
+                                    Overview
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-cms-post.html">
+                                    All Post
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-cms-post-new.html">
+                                    New Post
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-cms-post-category.html">
+                                    Category
+                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                         <!-- Nav item -->
+                         <li class="nav-item ">
+                            <a
+                                class="nav-link   collapsed  "
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navProject"
+                                aria-expanded="false"
+                                aria-controls="navProject"
+                            >
+                                <i class="nav-icon fe fe-file me-2"></i> Project
+                            </a>
+                                    <div id="navProject" class="collapse  " data-bs-parent="#sideNavbar">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link   " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-grid.html">
+                                            Grid
+                                        </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-list.html">
+                                           List
+                                        </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a
+                                class="nav-link   collapsed  "
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navprojectSingle"
+                                aria-expanded="false"
+                                aria-controls="navprojectSingle"
+                            >
+
+                                            Single
+                                        </a>
+                                                <div id="navprojectSingle" class="collapse " data-bs-parent="#navProject">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-overview.html">
+                                                        Overview
+                                                    </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-task.html">
+                                                        Task
+                                                    </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-budget.html">
+                                                        Budget
+                                                    </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-team.html">
+                                                        Team
+                                                    </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-files.html">
+                                                        Files
+                                                    </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/project-summary.html">
+                                                        Summary
+                                                    </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/add-project.html">
+                                            Create Project
+                                        </a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+
+
+
+
+
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
+                                <i class="nav-icon fe fe-lock me-2"></i> Authentication
+                            </a>
+                            <div id="navAuthentication" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/sign-in.html">Sign In</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/sign-up.html">Sign Up</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/forget-password.html">
+                                    Forget Password
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/notification-history.html">
+                                    Notifications
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/404-error.html"> 404 Error</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                              <!-- Nav item -->
+                              <li class="nav-item">
+                                <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navlayouts" aria-expanded="false" aria-controls="navlayouts">
+                                    <i class="nav-icon fe fe-layout me-2"></i> Layouts <span class="badge bg-success ms-2">New</span>
+                                </a>
+                                <div id="navlayouts" class="collapse " data-bs-parent="#sideNavbar">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/layouts/layout-horizontal.html">Top</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/layouts/layout-compact.html">
+                                       Compact
+                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link  " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/layouts/layout-vertical.html">Vertical</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <div class="nav-divider"></div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <div class="navbar-heading">Apps</div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/chat-app.html">
+                                <i class="nav-icon fe fe-message-square me-2"></i> Chat
+
+                            </a>
+                        </li>
+                              <!-- Nav item -->
+        <li class="nav-item">
+            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/task-kanban.html">
+                <i class="nav-icon mdi mdi-trello me-2"></i>
+                Task
+            </a>
+        </li>
+                              <!-- Nav item -->
+                              <li class="nav-item">
+                                <a class="nav-link  active " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/mail.html">
+                                    <i class="nav-icon mdi mdi-email-outline me-2"></i>
+                                    Mail  <span class="badge bg-success ms-2">New</span>
+                                </a>
+                            </li>
+                             <!-- Nav item -->
+                             <li class="nav-item">
+                                <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/calendar.html">
+                                    <i class="nav-icon mdi mdi-calendar me-2"></i>
+                                   Calendar  <span class="badge bg-success ms-2">New</span>
+                                </a>
+                            </li>
+                        <li class="nav-item">
+                            <div class="nav-divider"></div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <div class="navbar-heading">Components</div>
+                        </li>
+                         <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navTables" aria-expanded="false" aria-controls="navTables">
+                                <i class="nav-icon fe fe-database me-2"></i> Tables
+                            </a>
+                            <div id="navTables" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/basic-table.html">
+                                    Basic
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/datatables.html">
+                                            Data Tables
+                                </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Nav item -->
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/help-center.html">
+                                <i class="nav-icon fe fe-help-circle me-2"></i> Help Center
+
+                            </a>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navSiteSetting" aria-expanded="false" aria-controls="navSiteSetting">
+                                <i class="nav-icon fe fe-settings me-2"></i> Site Setting
+                            </a>
+                            <div id="navSiteSetting" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-general.html">
+                                    General
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-google.html">
+                                    Google
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-social.html">
+                                    Social
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-social-login.html">
+                                    Social Login
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-payment.html">
+                                    Payment
+                                </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/setting-smpt.html">
+                                    SMPT
+                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navMenuLevel" aria-expanded="false" aria-controls="navMenuLevel">
+                                <i class="nav-icon fe fe-corner-left-down me-2"></i> Menu Level
+                            </a>
+                            <div id="navMenuLevel" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#" data-bs-toggle="collapse" data-bs-target="#navMenuLevelSecond" aria-expanded="false" aria-controls="navMenuLevelSecond">
+                                    Two Level
+                                </a>
+                                        <div id="navMenuLevelSecond" class="collapse" data-bs-parent="#navMenuLevel">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link " href="#">NavItem 1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link " href="#">NavItem 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  collapsed  " href="#" data-bs-toggle="collapse" data-bs-target="#navMenuLevelThree" aria-expanded="false" aria-controls="navMenuLevelThree">
+                                    Three Level
+                                </a>
+                                        <div id="navMenuLevelThree" class="collapse " data-bs-parent="#navMenuLevel">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link  collapsed " href="#" data-bs-toggle="collapse" data-bs-target="#navMenuLevelThreeOne" aria-expanded="false" aria-controls="navMenuLevelThreeOne">
+                                                NavItem 1
+                                            </a>
+                                                    <div id="navMenuLevelThreeOne" class="collapse collapse " data-bs-parent="#navMenuLevelThree">
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " href="#">
+                                                            NavChild Item 1
+                                                        </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link " href="#">Nav Item 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <div class="nav-divider"></div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <div class="navbar-heading">Documentation</div>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://codescandy.com/geeks-bootstrap-5/docs/index.html">
+                                <i class="nav-icon fe fe-clipboard me-2"></i> Documentation
+                            </a>
+                        </li>
+                        <!-- Nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://codescandy.com/geeks-bootstrap-5/docs/changelog.html">
+                                <i class="nav-icon fe fe-git-pull-request me-2"></i> Changelog
+                                <span class="badge bg-primary ms-2">2.3.0</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Card -->
+                    <div class="card bg-dark-primary shadow-none text-center mx-4 my-8">
+                        <div class="card-body py-6">
+                            <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/background/giftbox.png" alt="" />
+                            <div class="mt-4">
+                                <h5 class="text-white">Unlimited Access</h5>
+                                <p class="text-white-50 fs-6">
+                                    Upgrade your plan from a Free trial, to select ‘Business Plan’. Start Now
+                                </p>
+                                <a href="#" class="btn btn-white btn-sm mt-2">Upgrade Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</nav>
+        <!-- Page Content -->
+        <div id="page-content">
+            <div class="header">
+    <!-- navbar -->
+    <nav class="navbar-default navbar navbar-expand-lg">
+        <a id="nav-toggle" href="#">
+            <i class="fe fe-menu"></i>
+        </a>
+        <div class="ms-lg-3 d-none d-md-none d-lg-block">
+            <!-- Form -->
+            <form class="d-flex align-items-center">
+                <span class="position-absolute ps-3 search-icon">
+                        <i class="fe fe-search"></i>
+                    </span>
+                <input type="search" class="form-control form-control-sm ps-6" placeholder="Search Entire Dashboard" />
+            </form>
+        </div>
+        <!--Navbar nav -->
+        <ul class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap">
+            <li class="dropdown stopevent">
+                <a class="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted" href="#" role="button" id="dropdownNotification" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg" aria-labelledby="dropdownNotification">
+                    <div class=" ">
+                        <div class="border-bottom px-3 pb-3 d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0">Notifications</span>
+                            <a href="# " class="text-muted">
+                                <span class="align-middle">
+                                        <i class="fe fe-settings me-1"></i>
+                                    </span>
+                            </a>
+                        </div>
+                        <!-- List group -->
+                        <ul class="list-group list-group-flush notification-list-scroll">
+                            <li class="list-group-item bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="text-body" href="#">
+                                        <div class="d-flex">
+                                            <img
+                                                src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-1.jpg"
+                                                alt=""
+                                                class="avatar-md rounded-circle"
+                                            />
+                                            <div class="ms-3">
+                                                <h5 class="fw-bold mb-1">Kristin Watson:</h5>
+                                                <p class="mb-3">
+                                                    Krisitn Watsan like your comment on course
+                                                    Javascript Introduction!
+                                                </p>
+                                                <span class="fs-6 text-muted">
+                                                    <span
+                                                        ><span
+                                                            class="fe fe-thumbs-up text-success me-1"
+                                                        ></span
+                                                        >2 hours ago,</span
+                                                    >
+                                                    <span class="ms-1">2:19 PM</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-center me-2">
+                                        <a
+                                            href="#"
+                                            class="badge-dot bg-info"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+
+                                            title="Mark as read"
+                                        >
+                                        </a>
+                                        <div>
+                                            <a
+                                                href="#"
+                                                class="bg-transparent"
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+
+                                                title="Remove"
+                                            >
+                                                <i class="fe fe-x text-muted"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="text-body" href="#">
+                                        <div class="d-flex">
+                                            <img
+                                                src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-2.jpg"
+                                                alt=""
+                                                class="avatar-md rounded-circle"
+                                            />
+                                            <div class="ms-3">
+                                                <h5 class="fw-bold mb-1">Brooklyn Simmons</h5>
+                                                <p class="mb-3">
+                                                    Just launched a new Courses React for Beginner.
+                                                </p>
+                                                <span class="fs-6 text-muted">
+                                                    <span
+                                                        ><span
+                                                            class="fe fe-thumbs-up text-success me-1"
+                                                        ></span
+                                                        >Oct 9,</span
+                                                    >
+                                                    <span class="ms-1">1:20 PM</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-center me-2">
+                                        <a
+                                            href="#"
+                                            class="badge-dot bg-secondary"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+
+                                            title="Mark as unread"
+                                        >
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="text-body" href="#">
+                                        <div class="d-flex">
+                                            <img
+                                                src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-3.jpg"
+                                                alt=""
+                                                class="avatar-md rounded-circle"
+                                            />
+                                            <div class="ms-3">
+                                                <h5 class="fw-bold mb-1">Jenny Wilson</h5>
+                                                <p class="mb-3">
+                                                    Krisitn Watsan like your comment on course
+                                                    Javascript Introduction!
+                                                </p>
+                                                <span class="fs-6 text-muted">
+                                                    <span
+                                                        ><span
+                                                            class="fe fe-thumbs-up text-info me-1"
+                                                        ></span
+                                                        >Oct 9,</span
+                                                    >
+                                                    <span class="ms-1">1:56 PM</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-center me-2">
+                                        <a
+                                            href="#"
+                                            class="badge-dot bg-secondary"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+
+                                            title="Mark as unread"
+                                        >
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="text-body" href="#">
+                                        <div class="d-flex">
+                                            <img
+                                                src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-4.jpg"
+                                                alt=""
+                                                class="avatar-md rounded-circle"
+                                            />
+                                            <div class="ms-3">
+                                                <h5 class="fw-bold mb-1">Sina Ray</h5>
+                                                <p class="mb-3">
+                                                    You earn new certificate for complete the Javascript
+                                                    Beginner course.
+                                                </p>
+                                                <span class="fs-6 text-muted">
+                                                    <span
+                                                        ><span
+                                                            class="fe fe-award text-warning me-1"
+                                                        ></span
+                                                        >Oct 9,</span
+                                                    >
+                                                    <span class="ms-1">1:56 PM</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-center me-2">
+                                        <a
+                                            href="#"
+                                            class="badge-dot bg-secondary"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+
+                                            title="Mark as unread"
+                                        >
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="border-top px-3 pt-3 pb-0">
+                            <a href="https://codescandy.com/geeks-bootstrap-5/pages/notification-history.html" class="text-link fw-semi-bold">
+                                    See all Notifications
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- List -->
+            <li class="dropdown ms-2">
+                <a class="rounded-circle" href="#" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="avatar avatar-md avatar-indicators avatar-online">
+                        <img alt="avatar" src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-1.jpg" class="rounded-circle" />
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                    <div class="dropdown-item">
+                        <div class="d-flex">
+                            <div class="avatar avatar-md avatar-indicators avatar-online">
+                                <img alt="avatar" src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-1.jpg" class="rounded-circle" />
+                            </div>
+                            <div class="ms-3 lh-1">
+                                <h5 class="mb-1">Annette Black</h5>
+                                <p class="mb-0 text-muted">annette@geeksui.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled">
+                        <li class="dropdown-submenu dropstart-lg">
+                            <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                <i class="fe fe-circle me-2"></i> Status
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="badge-dot bg-success me-2"></span> Online
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="badge-dot bg-secondary me-2"></span> Offline
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="badge-dot bg-warning me-2"></span> Away
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="badge-dot bg-danger me-2"></span> Busy
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://codescandy.com/geeks-bootstrap-5/pages/profile-edit.html">
+                                <i class="fe fe-user me-2"></i> Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://codescandy.com/geeks-bootstrap-5/pages/student-subscriptions.html">
+                                <i class="fe fe-star me-2"></i> Subscription
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fe fe-settings me-2"></i> Settings
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="dropdown-item" href="https://codescandy.com/geeks-bootstrap-5/index.html">
+                                <i class="fe fe-power me-2"></i> Sign Out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+            <!-- Page Header -->
+            <!-- Container fluid -->
+            <div class="container-fluid p-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="border-bottom pb-4 mb-4">
+                            <div class="mb-3 mb-lg-0">
+                                <h1 class="mb-0 h2 fw-bold">Mail</h1>
+                                <!-- Breadcrumb -->
+                   <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/admin-dashboard.html">App</a>
+                        </li>
+
+                        <li class="breadcrumb-item " >
+                        Mail
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Details
+                            </li>
+                    </ol>
+                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card body -->
+                            <div class="row g-0">
+                                <div class="col-xxl-2 col-xl-3 border-end">
+                                    <nav class="navbar navbar-expand  p-4 navbar-mail">
+
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                            <ul class="navbar-nav flex-column w-100">
+                                                <li class="d-grid mb-4">
+                                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#composeMailModal">
+                                                    Compose New Email
+                                                </a>
+                                              </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/mail.html">
+                                                        <span class="d-flex align-items-center justify-content-between">
+                                                <span class="d-flex align-items-center"><i class="fe fe-inbox me-2 "></i>Inbox
+                                                </span>
+                                                        <span>3</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center justify-content-between">
+                                                <span class="d-flex align-items-center"><i class="fe fe-send me-2 "></i>Sent
+                                                </span>
+                                                        <span>5</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link " href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/mail-draft.html">
+
+                                                        <span class="d-flex align-items-center"><i class="fe fe-mail me-2 "></i>Drafts
+                                                </span>
+
+
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center justify-content-between">
+                                                <span class="d-flex align-items-center"><i class="fe fe-alert-circle me-2 "></i>Spam
+                                                </span>
+                                                        <span>1</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+
+                                                        <span class="d-flex align-items-center"><i class="fe fe-trash-2 me-2 "></i>Trash
+                                                </span>
+
+
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center"><i class="fe fe-archive me-2 "></i>Archive
+                                                </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center"><i class="fe fe-star me-2"></i>Starred </span>
+
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center"><i class="mdi mdi-label-variant me-2"></i>Important</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="d-flex align-items-center"><i class="mdi mdi-label me-2 text-success"></i>Personal</span>
+                                                    </a>
+                                                </li>
+</ul>
+
+                                        </div>
+
+                                    </nav>
+                                </div>
+                                <div class="col-xxl-10 col-xl-9 col-12">
+                                    <div class="">
+                                        <!-- card header -->
+                                        <div class="card-header">
+                                          <div class="d-md-flex justify-content-between
+                                            align-items-center">
+                                            <div class="d-flex mb-3 mb-md-0">
+                                              <div>
+                                                <a href="https://codescandy.com/geeks-bootstrap-5/pages/dashboard/mail.html" class="btn btn-outline-white btn-sm fs-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to inbox">
+                                                    <i class=" fe fe-arrow-left "></i></a>
+                                              </div>
+                                              <!-- button group -->
+                                              <div class="ms-2">
+                                                <div class="btn-group" role="group" aria-label="Basic
+                                                  example">
+                                                  <button type="button" class="btn btn-outline-white btn-sm fs-5"  data-bs-toggle="tooltip" data-bs-placement="top" title="Archive"><i
+                                                      class=" fe fe-archive "
+                                                      ></i></button>
+                                                  <button type="button" class="btn btn-outline-white btn-sm fs-5"  data-bs-toggle="tooltip" data-bs-placement="top" title="Spam"><i
+                                                      class=" fe fe-alert-triangle "
+                                                      ></i></button>
+                                                  <button type="button" class="btn btn-outline-white btn-sm fs-5"  data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i
+                                                      class=" fe fe-trash-2 "
+                                                      ></i></button>
+                                                </div>
+                                              </div>
+                                              <div class="ms-2">
+                                                <button type="button" class="btn btn-outline-white btn-sm fs-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark as unread"> <i
+                                                     class=" fe fe-mail  "></i></button>
+                                              </div>
+                                            </div>
+                                            <!-- button -->
+                                            <div class="d-flex align-items-center">
+                                              <div>
+                                                <span>4 of 437</span>
+                                              </div>
+                                              <div class="ms-3">
+                                                <button type="button" class="btn btn-outline-white btn-sm fs-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Newer">
+                                                  <i class="fe fe-chevron-left" ></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-white btn-sm fs-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Older">
+                                                  <i class="fe fe-chevron-right" ></i>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- card body -->
+                                        <div class="card-body">
+                                          <div class="d-xl-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mb-3 mb-xl-0">
+                                              <!-- img -->
+                                              <div>
+                                                <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/avatar/avatar-1.jpg" alt=""
+                                                  class="rounded-circle avatar-md">
+                                              </div>
+                                              <!-- sidebar -->
+                                              <div class="ms-3 lh-1">
+                                                <h5 class="mb-1">Contact For "Website Design"</h5>
+                                                <p class="mb-0 fs-6">Codescandy hello@example.com</p>
+                                              </div>
+
+                                            </div>
+                                            <!-- text -->
+                                            <div class="d-flex align-items-center">
+                                              <div>
+                                                <small class="text-muted">Apr 22, 2022, 12:40 AM (1
+                                                  day ago)</small>
+                                              </div>
+                                              <div class="ms-2">
+                                                <a href="#" class="text-muted" data-bs-toggle="tooltip"
+                                                  data-bs-placement="top" title="Star"><i class="mdi
+                                                    mdi-star-outline mdi-18px"></i></a>
+                                                <a href="#" class="text-muted ms-1"
+                                                  data-bs-toggle="tooltip" data-bs-placement="top"
+                                                  title="Reply"><i class="mdi mdi-reply-outline
+                                                    mdi-18px"></i></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- text -->
+                                          <div class="mt-6">
+                                            <p class="mb-3 text-dark">
+                                              Hello Lesile Alexander,
+                                            </p>
+                                            <p>Ullamco deserunt commodo esse deserunt deserunt quis
+                                              eiusmod. Laborum sint excepteur non sit eiusmod sunt
+                                              voluptate ipsum nisi ullamco magna. Lorem consectetur
+                                              est dolor minim exercitation deserunt quis duis fugiat
+                                              ipsum
+                                              incididunt non. <span class="text-dark">Anim aute ipsum
+                                                cupidatat</span>nisi occaecat quis sit nisi labore
+                                              labore dolore do. Pariatur veniam culpa
+                                              quis veniam nisi exercitation veniam ut. </p>
+                                            <p>Quis do sint proident fugiat ad. Nunc at magna vitae
+                                              dolor maximus placerat. Nam quis arcu sodales, eleifend
+                                              ex vitae,
+                                              pellentesque ligula. Nunc ut tristique <a href="#">nisi,
+                                                id ullamcorper justo.</a></p>
+                                            <p>The generated Lorem Ipsum is therefore always free from
+                                              repetition, injected humour, or non-characteristic words
+                                              etc.Quisque imperdiet mauris turpis, sed malesuada metus
+                                              elementum dictum. Vestibulum hendrerit malesuada
+                                              elementum. </p>
+                                            <p class="mb-0">Proin elementum, sem in ornare sodales,
+                                              dui purus lobortis mi, ut iaculis lacus enim in dolor.
+                                              In velit sapien, dignissim accumsan nibh eu, eleifend
+                                              luctus metus. Quisque egestas nisl in enim hendrerit, at
+                                              vestibulum turpis tincidunt.</p>
+                                            <div class="mt-6">
+                                              <p class="mb-0">Cheers!</p>
+                                              <p class="text-dark font-weight-bold mb-0">Leslie
+                                                Alexander</p>                      </div>
+                                            <div class="border-top py-4 mt-6">
+                                              <p><i class="mdi mdi-attachment me-2 align-middle"></i>2
+                                                  Attachments</p>
+                                              <div class="d-flex">
+                                                <div class="d-flex align-items-center">
+                                                  <img
+                                                    src="https://codescandy.com/geeks-bootstrap-5/assets/images/background/profile-bg.jpg"
+                                                    alt="" width="36" height="36" class="rounded">
+                                                  <div class="ms-2">
+                                                    <p class="mb-0 fs-6">image-thumbnail.jpg</p>
+                                                    <p class="fs-6 mb-0">15.54 KB</p>
+                                                  </div>
+                                                </div>
+                                                <div class="d-flex align-items-center ms-6">
+                                                  <div class="icon-shape icon-md bg-danger text-white
+                                                    rounded">
+                                                    <small>PDF</small>
+                                                  </div>
+                                                  <div class="ms-2">
+                                                    <p class="mb-0 fs-6">pdf-thumbnail.jpg</p>
+                                                    <p class="fs-6 mb-0">243.45 KB</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- card footer -->
+                                        <div class="card-footer py-4 bg-white">
+                                          <button class="btn btn-outline-white btn-sm fs-5 me-2 mb-2 mb-md-0"><i class="mdi
+                                              mdi-reply-outline me-2"></i>Reply</button>
+                                          <button class="btn btn-outline-white btn-sm fs-5 me-2 mb-2 mb-md-0"><i class="mdi
+                                              mdi-reply-all-outline me-2"></i>Reply All</button>
+                                          <button class="btn btn-outline-white btn-sm fs-5"><i class="mdi
+                                              mdi-arrow-right-bold-outline me-2"></i>Forward</button>
+                                        </div>
+                                      </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <!-- Modal -->
+   <div class="modal fade compose-mail" id="composeMailModal" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">New message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+        <form>
+
+            <div class="border-bottom ">
+            <input class="form-control border-0 shadow-none" type="email" placeholder="To">
+        </div>
+        <div class="border-bottom ">
+            <input class="form-control border-0 shadow-none" type="email" placeholder="Subject">
+        </div>
+        <div class="">
+        <div id="editor" class="rounded-0">
+
+            <p> Type something here
+                </p>
+                <br />
+
+
+          </div>
+        </div>
+        </form>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <div class="">
+
+          <a href="#" class="btn btn-primary btn-sm">Send</a>
+
+          <span class="ms-4 text-muted compose-img-upload cursor-pointer" >
+            <label for="file-input">
+                <i class="fe fe-paperclip"></i>
+              </label>
+
+              <input id="file-input" type="file" />
+
+
+
+            </span>
+            <span class="ms-3 text-muted compose-img-upload cursor-pointer" >
+                <label for="file-input-second">
+                    <i class="fe fe-image"></i>
+                  </label>
+
+                  <input id="file-input-second" type="file" />
+
+
+
+                </span>
+                <a href="#" class="ms-3 text-muted" >
+
+                        <i class="fe fe-link"></i>
+
+
+
+                    </a>
+        </div>
+        <div>
+            <a href="#" class="text-muted">
+                <i class="fe fe-more-vertical" data-bs-toggle="tooltip" data-bs-placement="top" title="More Actions"></i>
+            </a>
+            <a href="#" class="text-muted ms-2">
+                <i class="fe fe-trash-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"></i>
+            </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Script -->
+    <!-- Libs JS -->
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/odometer/odometer.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/quill/dist/quill.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/file-upload-with-preview/dist/file-upload-with-preview.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/dragula/dist/dragula.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/jQuery.print/jQuery.print.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/prismjs/prism.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/prismjs/components/prism-scss.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/typed.js/lib/typed.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/jsvectormap/dist/maps/world.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/libs/fullcalendar/main.min.js"></script>
+
+
+<!-- CDN File for moment -->
+<script src='https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js'></script>
+
+
+
+<!-- Theme JS -->
+<script src="https://codescandy.com/geeks-bootstrap-5/assets/js/theme.min.js"></script>
+</body>
+
+
+<!-- Mirrored from codescandy.com/geeks-bootstrap-5/pages/dashboard/mail-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Mar 2022 15:41:43 GMT -->
+</html>
